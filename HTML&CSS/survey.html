@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Astrocamp survey from </title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Astrocamp survey from</h1>
+            <p id="description" class="description text-center"> Your review matter the most </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <div class="name-label" for="email">Email </label>
+                    <input id="name" type="text" class="form-control" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">
+                        <input id="email" type="email" class="form-control" placehoder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number"> Phone Number</label>
+                    <input id="number" type="number" class="form-control" placehoder="Enter your Phone number" min="10"
+                        max="12">
+                </div>
+                <div class="form-group">
+                    <p> How did your heared about us?</p>
+                    <select id="dropdown" class="form-control" required>
+                        <option disable selected value> select one </option>
+                        <option value="instagram"> instagram</option>
+                        <option value="facebook"> facebook</option>
+                        <option value="youtube"> youtube</option>
+                        <option value="other"> Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p> How satisfied yoou are with camp?</p>
+                    <label> <input type="radio" value="satisfactory" name="liked-program" class="input-radio">
+                            satisfactory</label>
+                        <label><input type="radio" value="somewhat" name="liked-program" class="input-radio"> Somewhat
+                            satisfactory</label>
+                        <label><input type="radio" value="not-satisfactory" name="liked-program" class="input-radio">not
+                            satisfactory</label>
+                </div>
+                <div class="form-group">
+                    <p> which fidd you liked the most?</0p>
+                        <label><input type="checkbox" value="astronomy" class="input-checkbox"> astronomy</label>
+                        <label><input type="checkbox" value="astronomysic" clas="input-checkbox">astrophics</label>
+                        <label><input type-="checkbox" value="astrobiology" class="input-checkbox"> astrobiology</label>
+                        <label><input type="checkbox" value="quantum" clas="input-checkbox">Quantum physics</label>
+                </div>
+                <div clas="form-group">
+                    <p>feedback on the camp:</p>
+                    <textarea id="comments" class="input-textarea" name="feedback" placehoder="Enter your
+                    feedback..."></textarea>
+                </div>
+                <div class="form-group">
+                    <button id="submit" type="submit" class="submit button"> submiit</button>
+                </div>
+        </form>
+    </div>
+</body>
+
+</html>
